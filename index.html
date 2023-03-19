@@ -12,26 +12,26 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; height: 1.5rem; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
   <main>
-    <section>
+    <section class="section">
       <div class="container">
-        <img src="assets/images/logo.svg" alt="">
+        <img class="logo" src="assets/images/logo.svg" alt="">
 
-        <h1 class="title">We are launching soon!</h1>
+        <h1 class="title">We are launching <span>soon!</span></h1>
 
         <p class="desc">Subscribe and get notified</p>
 
-        <form action="">
+        <form class="form" action="">
           <div class="input-container">
-            <input type="text" name="" id="">
-            <div class="error-message"></div>
+            <input class="input" type="text" placeholder="Your email address..." name="" id="">
+            <div class="error-message">Please provide a valid email address</div>
           </div>
-          <button type="submit">Notify Me</button>
+          <button class="btn" type="submit">Notify Me</button>
         </form>
 
         <img src="assets/images/illustration-dashboard.png" alt="">
@@ -40,7 +40,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <nav class="medias">
       <div class="media">
         <i class='bx bxl-facebook'></i>
@@ -52,12 +52,15 @@
         <i class='bx bxl-instagram'></i>
       </div>
     </nav>
-    <div>&copy; Copyright Ping. All rights reserved.</div>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="copy">&copy; Copyright Ping. All rights reserved.</div>
   </footer>
+
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Thales Carvalho</a>.
+  </p>
+
+  <script src="assets/js/main.js"></script>
 
 </body>
 </html>

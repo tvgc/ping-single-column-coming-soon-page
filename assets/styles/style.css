@@ -1,0 +1,269 @@
+/*-----------------------------------*\
+  #FONTS
+\*-----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap');
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+ input,
+ button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+html {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f2f2f2;
+    min-height: 100vh;
+    padding-block: 8rem 0rem;
+    display: grid;
+}
+
+/*-----------------------------------*\
+  #CODE
+\*-----------------------------------*/
+.container {
+    padding-inline: 2.7rem;
+}
+
+@media (min-width: 780px){
+    .container {
+        max-width: 64rem;
+        padding-inline: 0;
+        margin: 0 auto;
+    }
+}
+
+.container,
+.footer {
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 786px) {
+    .logo {
+        height: 3.9rem;
+    }
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #969696;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 786px) {
+    .title {
+        font-size: 4.8rem;
+    }
+}
+
+.desc {
+    font-weight: 300;
+    color: #15202A;
+    margin-bottom: 3.2rem;
+}
+
+@media (min-width: 786px) {
+    .desc {
+        font-size: 2rem;
+    }
+}
+
+.title span {
+    font-weight: 700;
+    color: #15202A;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 7.2rem;
+}
+
+@media (min-width: 786px) {
+    .form {
+        flex-direction: row;
+        gap: 1.6rem;
+        max-width: 100%;
+    }
+
+    .btn {
+        flex-basis: 20rem;
+    }
+}
+
+.input-container {
+    flex: 1;
+}
+
+.input {
+    width: 28rem;
+    height: 4rem;
+    border-radius: 3rem;
+    padding-left: 3rem;
+    box-shadow: 0px 0px 7px 3px #00000000;border: 1px solid #C2D3FF;
+    color: #6789e0;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.input-container.error .input {
+    border: 1px solid #FF5466;
+}
+
+@media (min-width: 786px) {
+    .input {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+}
+
+
+.input::placeholder {
+    font-family: Libre Franklin;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #7c99e4;
+}
+
+@media (min-width: 786px) {
+    .input::placeholder {
+        font-size: 1.6rem;
+    }
+}
+
+.input:focus {
+    outline: 1px solid #C2D3FF;
+}
+
+.error-message {
+    display: none;
+}
+
+.input-container.error .error-message {
+    display: block;
+    color: #FF5466;
+    text-align: start;
+    padding-left: 3rem;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (min-width: 786px) {
+    .input-container.error .error-message {
+        font-size: 1.2rem;
+    }
+}
+
+.btn {
+    width: 28rem;
+    padding-block: 1.2rem;
+    border-radius: 3rem;
+    background: #4C7BF3;
+    box-shadow: 0px 5px 10px 2px #4C7BF33B;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 250ms;
+}
+
+.btn:active {
+    opacity: 0.2;
+}
+
+@media (min-width: 786px) {
+    .btn {
+        flex-basis: 20rem;
+        font-size: 1.6rem;
+    }
+}
+
+
+img {
+    margin-bottom: 7.2rem;
+}
+
+.footer,
+.attribution {
+    align-self: end;
+}
+
+.footer {
+    margin-bottom: 2rem;
+}
+
+.medias {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 2rem;
+    color: #4C7BF3;
+    border-radius: 50%;
+    border: 0.92px solid #4C7BF326;
+    margin-bottom: 2.7rem;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.media:active {
+    background-color: #4C7BF3;
+    color: #FFFFFF;
+}
+
+.copy {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #969696;
+}
+
+@media (min-width: 786px) {
+    .copy {
+        font-size: 1.2rem;
+    }
+}
